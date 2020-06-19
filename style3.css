@@ -1,0 +1,76 @@
+::-webkit-scrollbar-thumb:vertical {
+	background: #d0a98f;
+	 border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+	width: 15px;
+    background-color: #45002c;
+    
+    
+
+}
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    background-color: #ecdcc9;;
+    font-family: 'Poppins', sans-serif;
+
+}
+.menu{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.menu ul {
+    line-height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    list-style-type: none;
+    text-decoration: none;
+    font-weight: bold;
+}
+.menu ul li a{
+    font-size: 30px;
+    color: #45002c;
+    -webkit-transition-duration: 0.5s;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.menu ul li a:hover {
+    letter-spacing: 6px;
+    color: #d0a98f;
+}
+
+
+.underline {
+    display: inline-block;
+    color: #d0a98f;
+    text-decoration: none;
+}
+
+.underline::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 5px;
+    background: #d0a98f;
+    transition: width .3s;
+}
+
+.underline:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
