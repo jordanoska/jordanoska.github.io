@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", "Montserrat", sans-serif;
 }
 
 .contact{
@@ -64,9 +64,9 @@ body {
     height: 40px;
     
 }
-.line{
+/* .line{
     background-color: red;
     width: 60px;
     height: 2px;
     top: 20%;
-} 
+}  */

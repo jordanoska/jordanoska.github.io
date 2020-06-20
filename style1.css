@@ -1,14 +1,129 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.contact{
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 350px;
-    height: 200px;
-    background-color: red;
-    border-radius: 6px;
+body {
+  background-color: #ecdcc9;
+  font-family: "Poppins", "Montserrat", sans-serif;
+}
+
+.middle {
+  background-color: #d0a98f;
+  margin: 0 auto;
+  width: 50%;
+  /* height: 200px; */
+  border-radius: 10px;
+  margin-top: 50px;
+  border: 10px solid white;
+}
+.img {
+  padding: 20px;
+}
+.img img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  /* border: 5px solid #ecdcc9; */
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: white;
+}
+
+.contact {
+  position: relative;
+  margin: 0 auto;
+  width: 50%;
+  height: 350px;
+  background-color: #edd4b2;
+  border: 10px solid white;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.container {
+  width: 40%;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  margin-left: 20px;
+}
+
+.container h1 {
+  color: #45002c;
+}
+@keyframes load {
+  from {
+    width: 0%;
+  }
+}
+@-webkit-keyframes load {
+  from {
+    width: 0%;
+  }
+}
+@-moz-keyframes load {
+  from {
+    width: 0%;
+  }
+}
+@-o-keyframes load {
+  from {
+    width: 0%;
+  }
+}
+
+.bar {
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 100px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.bar::before {
+  content: attr(data-skill);
+  background-color: #45002c;
+  display: inline-block;
+  padding: 5px 0 5px 10px;
+  border-radius: inherit;
+  animation: load 2s 0s;
+  -webkit-animation: load 2s 0s;
+  -moz-animation: load 2s 0s;
+  -o-animation: load 2s 0s;
+}
+
+.bar.front::before {
+  background-color: #45002c;
+}
+.bar.back::before {
+  background-color: #45002c;
+}
+
+.bar.learning::before {
+  width: calc(80% - 10px);
+}
+.bar.basic::before {
+  width: calc(90% - 10px);
+}
+.bar.intermediate::before {
+  width: calc(80% - 10px);
+}
+.bar.advanced::before {
+  width: calc(50% - 10px);
+}
+.bar.expert::before {
+  width: calc(50% - 10px);
+}
+
+.desc {
+  color: #45002c;
+  width: 50%;
+  float: right;
+  margin-top: 6%;
+  margin-right: 20px;
 }
